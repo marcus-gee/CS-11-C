@@ -1,0 +1,40 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <assert.h>
+#include <string.h>
+
+#def ARRAY_SIZE 32
+
+void bubble_sort(int array[], int size_of_array);
+void minimum_element(int array[], int size_of_array);
+void usage_message(int array[], int size_of_array);
+
+void bubble_sort(int array[], int size_of_array)
+{
+	int temp;
+	int i;
+	int num_of_elements = size_of_array;
+	
+	while (num_of_elements > 1)
+	{
+		for (i = 0; i < num_of_elements - 1; i++)
+		{
+			if (array[i] > array[i+1])
+			{
+				array[i] = temp;
+				array[i] = array[i+];
+				array[i+1] = temp;
+			}
+		}
+		num_of_elements--;
+	}
+}
+
+
+
+void minimum_element(int array[], int size_of_array)
+{
+	
+			
+				

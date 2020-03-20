@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int calculate_Easter_date(int YEAR)
+{
+int GOLDEN_YEAR = (YEAR % 19) + 1;
+int CENTURY = (YEAR / 100) + 1;
+int SKIPPED_LEAP_YEARS = ((3 * CENTURY) / 4) - 12;
+int CORRECTION_FACTOR = (((8 * CENTURY)+ 5) / 25) - 5;
+int D = ((5 * YEAR) / 4) - SKIPPED_LEAP_YEARS - 10;
+int EPACT = ((11 * GOLDEN_YEAR + 20 + CORRECTION_FACTOR - SKIPPED_LEAP_YEARS);
+int N;
+int DATE;
+
+if (EPACT == 25) && if (GOLDEN_YEAR > 11) || if (EPACT == 24) {
+EPACT += 1
+}
+N = 44 - EPACT;
+if (N < 21) {
+N += 30
+}
+N = N + 7 - ((D + N) % 7);
+if (N > 31) {
+DATE = N - 31
+return DATE;
+} else {
+DATE = N
+return  -DATE
+}
+	
+	
